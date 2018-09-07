@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+% 
+% Further modified by:
+% Rohan Bavishi <rohan.bavishi95@gmail.com> 9/20/2016
+%
+% Important note:
+% This template requires the simple_style.cls file to be in the same directory 
+% as the .tex file. The res.cls file provides the resume style used for 
+% structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[mm]{simple_style}  
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{xcolor}
+\hypersetup {
+    colorlinks=true,
+    linkcolor=colorlink,
+    filecolor=magenta,      
+    urlcolor=colorlink,
+}
+\usepackage[left=0.7in, right=2in, top=0.9in]{geometry}
+
+
+% Increase text height
+\textheight=670pt
+
+\begin{document}
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{Hyunseung Bang}
+\qualification{PH.D candidate in Mechanical Engineering (With Systems Engineering Focus), Cornell University}
+\emailone{hb398@cornell.edu}
+% \website{}{\url{}}
+% \github{https://github.com/rbavishi}{\url{github.com/rbavishi}}
+\phone{+1-607-379-8823}
+\address{2250 N. Triphammer Rd. Apt \#R1A \\ Ithaca, NY 14850}
+
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-------------------------------------------------------------------------------
+%	RESEARCH SECTION
+%-------------------------------------------------------------------------------
+\section{Research\\Interests}
+\par
+
+Systems engineering and architecture, tradespace exploration, knowledge discovery, data mining, data visualization, multi-objective optimization, modeling and simulation, surrogate modeling, uncertainty quantification, sensitivity analysis
+
+\sectionline
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{Education}
+\cusemph{Cornell University}, Ithaca, NY 
+\timeline{Aug '14 - Present}\\
+{\sl Ph.D Candidate} in Mechanical Engineering\\
+\supervisor{Advisor : Prof. Daniel Selva}
+
+\cusemph{Cornell University}, Ithaca, NY 
+\timeline{Dec '17}\\
+{\sl M.S.} in Mechanical Engineering\\
+\supervisor{Advisor : Prof. Daniel Selva}
+
+\cusemph{Korea Advanced Institute of Science and Technology (KAIST)}\\
+Daejeon, South Korea 
+\timeline{Feb '09 - Aug '14}\\
+{\sl B.S.} in Mechanical Engineering and Bioengineering (double major)
+
+\sectionline
+%-------------------------------------------------------------------------------
+
+\section{Research\\Experience}
+\begin{project}
+  \title{EDL (Entry, Descent, and Landing) Guidance and Control Group, Jet Propulsion Laboratory, Pasadena, CA}
+  \supervisor{Summer intern, Mentor : Dr. Joel Benito}
+  \duration{May '18 - Jul '18}
+    \description{
+	- Surrogate modeling of spacecraft trajectory simulation using deep neural network, with a goal of enabling optimization under uncertainty\\
+	- Implemented and trained network models using widely-used deep learning packages
+	(\href{https://keras.io/}{Keras}, \href{https://www.tensorflow.org/}{Tensorflow}, \href{https://pytorch.org/}{PyTorch})\\
+	- Developed visualizations to inspect and qualitatively assess the model accuracy\\
+	- Bayesian hyperparameter optimization using Gaussian process and random forest
+  } 
+\end{project}
+\begin{projectDescription}
+  \title{}
+  \supervisor{}
+  \duration{Jun '17 - Aug '17}
+  \description{
+	- Developed a software layer that interfaces with \href{https://dakota.sandia.gov/}{Dakota} (Large-scale engineering optimization and uncertainty analysis tool developed at Sandia National Laboratories) to easily launch and manage computer experiments (nested parameters studies and Monte Carlo simulations for uncertainty quantification) on supercomputers.\\
+	- Developed tools to monitor and log information about the status and the progress during large-scale computer experiment runs
+  }
+\end{projectDescription}
+\begin{projectDescription}
+  \title{}
+  \supervisor{}
+  \duration{Jun '16 - Aug '16}
+  \description{
+	- Developed software tools to analyze Monte Carlo simulation data generated for uncertainty quantification of the Mars Ascent Vehicle trajectory simulation\\
+	- Implemented bootstrapping to evaluate the stability of sample estimates (sample mean, percentiles, etc.), and devised methods to predict the number of samples needed to obtain the desired level of accuracy.\\
+	- Used Monte Carlo flitering and maximal information coefficient to identify important variables\\
+	- Implemented decision trees and linked-data visualizations to support multi-dimensional data analysis\\
+  }
+\end{projectDescription}\newpage
+
+\begin{project}
+  \title{Systems Engineering, Architecture, and Knowledge (SEAK) Lab, Cornell University, Ithaca, NY}
+  \supervisor{Graduate Research Assistant, Advisor : Prof. Daniel Selva}
+  \duration{Jan '15 - Present}
+  \description{
+    - Developed a new web-based graphical user interface to support knowledge discovery during tradespace analysis\\
+    
+    - Developed data mining algorithms that combine the search capability of evolutionary algorithms and the domain-specific knowledge encoded in an ontology in order to discover rules that explain the data well, while being easy to understand\\
+    
+    - Designed and conducted experiments with human participants to study the effect of how different tradespace exploration tools influence the users' learning and their capability to generate new designs\\
+    
+    - Used association rule mining to generate new operators in evolutionary algorithm to improve efficiency of the search
+  }
+\end{project}
+\begin{project}
+  \title{Neuro-Rehabilitation Engineering Lab, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea}
+  \supervisor{Undergraduate Research Assistant, Advisor: Prof. Hyung-Soon Park}
+  \duration{Jan '14 - Jun '14}
+  \description{
+    - EEG data analysis using EEGLAB (Open Source MATLAB Toolbox)\\
+    - Designed and fabricated a device that quantitatively measures elbow spasticity to support medical doctors in diagnosing and treating stroke patients
+  }
+\end{project}
+\vspace{-2ex}
+\sectionline
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%      PUBLICATIONS 
+%-------------------------------------------------------------------------------
+\section{Publications}
+
+\cusemph{Hyunseung Bang}, Yuan Ling Zi Shi, Guy Hoffman, So-Yeon Yoon, and Daniel Selva, “Exploring the Feature Space to Aid Learning in Design Space Exploration”, In \textit{Design Computing and Cognition ’18}, Springer
+
+Yuan Ling Zi Shi, \cusemph{Hyunseung Bang}, Guy Hoffman, Daniel Selva, and So-Yeon Yoon, “Cognitive Style and field knowledge in complex design problem solving: A comparative case study of decision support systems”, In \textit{Design Computing and Cognition ’18}, Springer
+
+Matt Law, Nikhil Dhawan, \cusemph{Hyunseung Bang}, So-Yeon Yoon, Daniel Selva and Guy Hoffman, “Side-by-side Human-Computer Design using a Tangible User Interface”, In \textit{Design Computing and Cognition ’18}, Springer
+
+Nozomi Hitomi, \cusemph{Hyunseung Bang}, and Daniel Selva, “Adaptive Knowledge-Driven Optimization for Architecting a Distributed Satellite System”, \textit{Journal of Aerospace Information Systems}, pp.1-16
+
+\cusemph{Hyunseung Bang}, Antoni Viros, Aranu Prat, and Daniel Selva, “Daphne: An Intelligent Assistant for Architecting Earth Observing Satellite Systems”, In \textit{AIAA Information Systems-AIAA Infotech@ Aerospace}, Kissimmee, FL, January 2018
+
+\cusemph{Hyunseung Bang} and Daniel Selva, “Leveraging Logged Intermediate Design Attributes for Improved Knowledge Discovery in Engineering Design”, In \textit{Proceedings of the ASME 2017 International Design Engineering Technical Conferences \& Computers and Information in Engineering Conference IDETC/CIE 2016}, Cleveland, OH, August 2017
+
+Nozomi Hitomi, \cusemph{Hyunseung Bang} and Daniel Selva, “Extracting and Applying Knowledge with Adaptive Knowledge-Driven Optimization to Architect an Earth Observing Satellite System”, In \textit{AIAA Information Systems-AIAA Infotech@ Aerospace} (p. 0794), Grapevine, TX, January 2017
+
+\cusemph{Hyunseung Bang} and Daniel Selva, “iFEED: Interactive Feature Extraction for Engineering Design”, In \textit{Proceedings of the ASME 2016 International Design Engineering Technical Conferences \& Computers and Information in Engineering Conference IDETC/CIE 2016}, Boston, MA, August 2016.
+
+\newpage
+\vspace{-2ex}
+\sectionline
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	Relevant Courses
+%-------------------------------------------------------------------------------
+\section{Relevant\\Courses}
+\cusemph{Applied Math and Optimization}: Applied Analysis, Linear Programming, Applied Logic\\
+\cusemph{Dynamics, Space Systems, and Engineering Design}: Intermediate \& Advanced Dynamics, Spacecraft Dynamics, Estimation \& Control, Spacecraft Technologies \& Systems Architecture\\
+\cusemph{Machine Learning and AI}: Supervised/unsupervised Learning, Decision Theory, Human-Robot Interaction, Bayesian Machine Learning
+
+\vspace{-2ex}
+\sectionline
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%-------------------------------------------------------------------------------
+\section{Computer\\Skills}
+\cusemph{Languages}: Java, Python, JavaScript, Jess (Rule-based programming language), Prolog
+\\
+\cusemph{Web Technology}: HTML, CSS, jQuery, d3.js, Django
+\\
+\cusemph{Other tools}: MATLAB, Prot\'{e}g\'{e} (Ontology editor), MongoDB (NoSQL database)
+
+\vspace{-2ex}
+\sectionline
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	References
+%-------------------------------------------------------------------------------
+\section{References}
+\cusemph{Daniel Selva}\\
+Assistant Professor, The Department of Aerospace Engineering, Texas A\&M University\\
+dselva@tamu.edu
+
+\cusemph{Guy Hoffman}\\
+Assistant Professor, Sibley School of Mechanical and Aerospace Engineering, Cornell University\\
+hoffman@cornell.edu
+
+\cusemph{So-Yeon Yoon}\\
+Associate Professor, The Department of Design and Environmental Analysis, Cornell University\\
+sy492@cornell.edu
+
+\cusemph{Joel Benito}\\
+EDL Guidance and Control Group, Jet Propulsion Laboratory\\
+Joel.Benito.Manrique@jpl.nasa.gov
+
+\cusemph{Erik Bailey}\\
+EDL Gruidance and Control Group, Jet Propulsion Laboratory\\
+erik.s.bailey@jpl.nasa.gov
+
+
+%-------------------------------------------------------------------------------
+\end{resume}
+\end{document}
